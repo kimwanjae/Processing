@@ -1,0 +1,27 @@
+float x =0;
+int dir =1;
+void setup()
+{
+  size(500,300);
+  background(50);
+  strokeWeight(5);
+
+ }
+
+void draw()
+{
+  background(50);
+  stroke(255,0,0);  
+  fill(230,200,20);
+  ellipse(x+30, 30,30,30);
+  x = x+(3*dir);
+  
+    if ((x> width-30) ||(x < 0))
+  {
+    dir=dir*-1;
+  }
+  else
+  {
+    ;
+  }
+ }
