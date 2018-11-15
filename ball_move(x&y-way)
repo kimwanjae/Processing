@@ -1,5 +1,7 @@
-float x =0;
-float y =0;
+float x =0.0;
+float y =0.0;
+float x_spd =3.0;
+float y_spd =2.0;
 int dir_x =1;
 int dir_y =1;
 
@@ -17,11 +19,12 @@ void draw()
   stroke(255,0,0);  
   fill(230,200,20);
   ellipse(x+30, y+30,30,30);
-  x = x+(3*dir_x);
-  y = y+(2*dir_y);
+  x = x+(x_spd*dir_x);
+  y = y+(y_spd*dir_y);
     if ((x> width-30) ||(x < 0))
   {
     dir_x=dir_x*-1;
+  //  x_spd = x_spd+1.5;
   }
   else
   {
@@ -30,6 +33,7 @@ void draw()
      if ((y> height-30) ||(y < 0))
   {
     dir_y=dir_y*-1;
+  //  y_spd = y_spd+1.2;    
   }
   else
   {
