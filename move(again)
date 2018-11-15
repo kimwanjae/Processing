@@ -1,0 +1,30 @@
+float x =0;
+
+void setup()
+{
+  size(500,300);
+  background(50);
+  strokeWeight(5);
+
+ }
+
+void draw()
+{
+  background(50);
+  stroke(255,0,0);  
+  fill(230,200,20);
+  arc(x+50,50,100,100, radians(0), radians(270));
+  fill(255,0,0);
+  noStroke();
+  ellipse(x+35, 30,10,10);
+  x = x+1;
+  if (x>500)  //정해진 화면내에서 계속 반복하려면 조건문을 하나 추가해야 됩니다.
+  {
+    x=0;
+  }
+  else
+  {
+    ;
+  }
+ }
+
