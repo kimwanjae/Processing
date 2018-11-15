@@ -1,0 +1,21 @@
+float x =0;
+
+void setup()
+{
+  size(500,300);
+  background(50);
+  strokeWeight(5);
+
+ }
+
+void draw()
+{
+  background(50);  // background함수를 안 넣어주면 궤적이 남으면서 그림이 그려지므로 꼭 넣어줘야 한다.
+  stroke(255,0,0);  
+  fill(230,200,20);
+  arc(x+50,50,100,100, radians(0), radians(270));
+  fill(255,0,0);
+  noStroke();
+  ellipse(x+35, 30,10,10);
+  x = x+1;
+ }
