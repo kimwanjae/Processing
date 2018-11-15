@@ -10,6 +10,7 @@ void setup()
 
 void draw()
 {
+  frameRate(60); // 프레임 속도가 증가하면 움직임 속도가 빨라지는것을 볼수 있습니다
   background(50);
   stroke(255,0,0);  
   fill(230,200,20);
