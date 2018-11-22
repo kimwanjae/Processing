@@ -1,0 +1,28 @@
+int x=30;
+int y=330;
+float z=100;
+
+void setup(){
+ size(800,400); //(넓이,높이)
+ background(0);
+}
+
+void draw(){
+ background(0);
+ noStroke();
+ fill(255,255,0);
+ //rect(100,100,100,150);
+ //ellipse(200,200,30,30);
+ arc(z,150,150,150,radians(x),radians(y));
+ fill(0);
+ ellipse(z+25,110,25,20);
+ z=z+2;
+ if(z<780){
+  x=x-1;
+  y=y+1;
+  if(x<5 && y>355) {
+    x=30;
+    y=330; }
+ } else {
+   z=100; }
+}
